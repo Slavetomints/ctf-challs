@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Profile</h1>
+
+        <div class="card">
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Bio:</strong> {{ bio }}</p>
+            <p><strong>Location:</strong> {{ location }}</p>
+        </div>
+
+        <a href="/update" class="btn">Edit Profile</a>
+        <a href="/" class="btn">Home</a>
+    </div>
+</body>
+</html>

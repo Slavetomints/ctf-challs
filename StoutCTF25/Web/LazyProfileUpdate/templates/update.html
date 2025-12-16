@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Update Profile</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Update Your Profile</h1>
+
+
+    <form method="POST" action="/update">
+      <label>Paste your XML:</label>
+      <textarea name="xml" rows="15" style="width:100%;"></textarea>
+      <br><br>
+      <button type="submit">Submit XML</button>
+    </form>
+
+    <p>It should look something like this:</p>
+    <img src="/static/img/sampleXML.png" alt="sample XML snippet">
+
+    <a href="/profile" class="btn">Back to Profile</a>
+  </div>
+</body>
+
+</html>

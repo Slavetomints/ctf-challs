@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            color: #ddd;
+            font-family: "Fira Code", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #1a1a1a;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,255,180,0.2);
+            width: 320px;
+            text-align: center;
+            border: 1px solid #222;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #00ffb4;
+            font-weight: normal;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px 0;
+            border: none;
+            border-radius: 6px;
+            background: #121212;
+            color: #eee;
+            font-size: 14px;
+            outline: none;
+            box-shadow: inset 0 0 5px #000;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #00ffb4;
+            border: none;
+            border-radius: 6px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background .2s;
+        }
+
+        input[type="submit"]:hover {
+            background: #00d89d;
+        }
+
+        p {
+            margin-top: 15px;
+            min-height: 20px;
+            color: #ff6a6a;
+        }
+
+        /* Success message */
+        p.success {
+            color: #00ff9c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Admin Login</h2>
+        <form method="post">
+            <input name="username" placeholder="Username" type="text">
+            <input name="password" placeholder="Password" type="password">
+            <input type="submit" value="Login">
+        </form>
+        <p class="{{ 'success' if msg == 'Welcome!' else '' }}">{{ msg }}</p>
+    </div>
+</body>
+</html>
